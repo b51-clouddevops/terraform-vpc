@@ -3,7 +3,7 @@ output "VPC_ID" {
 }
 
 output "VPC_CIDR" {
-    value =  module.vpc.VPC_CIDR.
+    value =  module.vpc.VPC_CIDR
 }
 
 output "PRIVATE_SUBNET_ID" {
@@ -27,5 +27,5 @@ output "DEFAULT_VPC_ID" {
 }
 
 output "DEFAULT_VPC_CIDR" {
-    value  =  module.vpcDEFAULT_VPC_CIDR
+    value  =  module.vpc.DEFAULT_VPC_CIDR
 }
