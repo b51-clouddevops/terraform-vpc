@@ -11,15 +11,15 @@ output "PRIVATE_SUBNET_ID" {
 }
 
 output "PUBLIC_SUBNET_ID" {
-    value = module.vpc.PRIVATE_SUBNET_ID
+    value = module.vpc.PUBLIC_SUBNET_ID
 }
 
 output "PRIVATE_SUBNET_CIDR" {
-    value = aws_subnet.private.*.cidr_block
+    value = module.vpc.PRIVATE_SUBNET_CIDR
 }
 
 output "PUBLIC_SUBNET_CIDR" {
-    value = aws_subnet.public.*.cidr_block
+    value = module.vpc.PRIVATE_SUBNET_CIDR
 }
 
 output "DEFAULT_VPC_ID" {
