@@ -19,13 +19,13 @@ output "PRIVATE_SUBNET_CIDR" {
 }
 
 output "PUBLIC_SUBNET_CIDR" {
-    value = module.vpc.PRIVATE_SUBNET_CIDR
+    value = module.vpc.PUBLIC_SUBNET_CIDR
 }
 
 output "DEFAULT_VPC_ID" {
-    value  =  var.DEFAULT_VPC_ID
+    value  =  module.vpc.DEFAULT_VPC_ID
 }
 
 output "DEFAULT_VPC_CIDR" {
-    value  =  var.DEFAULT_VPC_CIDR
+    value  =  module.vpcDEFAULT_VPC_CIDR
 }
