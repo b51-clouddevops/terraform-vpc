@@ -9,6 +9,9 @@ module "vpc" {
   DEFAULT_VPC_CIDR      = var.DEFAULT_VPC_CIDR
   DEFAULT_VPC_RT        = var.DEFAULT_VPC_RT
   PRIVATE_HOSTED_ZONEID = var.PRIVATE_HOSTED_ZONEID
+  PRIVATE_HOSTED_ZONENAME = var.PRIVATE_HOSTED_ZONENAME 
+  PUBLIC_HOSTED_ZONEID    = var.PUBLIC_HOSTED_ZONEID
+  
 }
 
 # module "vpc" {
@@ -18,3 +21,7 @@ module "vpc" {
 # We cannot parameterise anything on source of the module. So that means we cannot use the variables.
 # How can I tell to my source module to fetch the code from a branch of my choice ? By default, it only refers to main branch
 # Alternatives to make it flexible ?
+
+variable "PRIVATE_HOSTED_ZONENAME" {}
+variable "PUBLIC_HOSTED_ZONEID" {}
+variable "PUBLIC_HOSTED_ZONENAME" {}
