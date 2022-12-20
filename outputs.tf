@@ -35,4 +35,14 @@ variable "PRIVATE_HOSTED_ZONENAME" {}
 variable "PUBLIC_HOSTED_ZONEID" {}
 variable "PUBLIC_HOSTED_ZONENAME" {}
 
-outp
+output "PRIVATE_HOSTED_ZONEID" {
+    value = var.PRIVATE_HOSTED_ZONEID
+}
+
+output "PRIVATE_HOSTED_ZONENAME" {
+    value = var.PRIVATE_HOSTED_ZONENAME
+}
+
+output "PUBLIC_HOSTED_ZONEID" {
+    value = var.PUBLIC_HOSTED_ZONEID 
+}
